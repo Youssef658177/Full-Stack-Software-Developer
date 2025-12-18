@@ -1,0 +1,86 @@
+/* style.css */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+/* وباقي كود تنسيق .header و .styled-name */
+body {
+    font-family: Arial, sans-serif; /* استخدام خط غير مشفر وواضح */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* لون خلفية خفيف */
+    color: #333;
+    direction: rtl; /* دعم اللغة العربية */
+}
+
+/* المهمة 1: الاسم المصمم في أعلى اليسار */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* لتحريك الأيقونة بعيداً عن الاسم */
+    align-items: center;
+}
+.styled-name {
+    font-size: 1.8em;
+    color: #ffcc00; /* تمييز الاسم بلون مختلف */
+    margin: 0;
+}
+
+/* المهمة 8: أيقونة Home */
+.home-icon {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* المهمة 2: شريط التنقل (Navigation Bar) */
+.navbar {
+    background-color: #555;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 0.9em; /* تصغير الخط */
+    font-weight: bold; /* تمييز الخط */
+    transition: all 0.3s ease; /* لإضافة سلاسة للتأثير */
+}
+/* تأثير الـ Hover (عند مرور الماوس) للمهمة 2 */
+.nav-item:hover {
+    color: #ffcc00; /* تغيير لون الخط */
+    text-decoration: underline; /* إضافة سطر تحته */
+    background-color: #666; /* تغيير خلفية */
+    transform: scale(1.05); /* تأثير بصري إضافي */
+}
+
+/* تنسيق عام للأقسام */
+.section {
+    padding: 40px 50px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* المزيد من تنسيق المهارات (المهمة 4) والمحتوى... */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+.skill-logo {
+    font-size: 3em;
+    color: #007bff;
+}
